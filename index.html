@@ -2,37 +2,43 @@
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PM Oscar Martell — LinksPM</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f5f1e4;color:#171717;font-family:'DM Sans',sans-serif}.wrap{max-width:920px;margin:auto;padding:28px 22px 50px}header{display:flex;align-items:center;gap:12px;font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:700;letter-spacing:-1.5px}.logo{background:#e4e13d;border-radius:16px;padding:14px}.tag{margin:52px 0 22px;color:#174290;font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;letter-spacing:2px}.client{background:linear-gradient(145deg,#2551bb 0%,#1768c6 53%,#1194d4 100%);border-radius:30px;padding:28px;margin-top:22px;color:white;box-shadow:0 12px 35px #17429018}.client-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.client-head h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(27px,5vw,42px);letter-spacing:-1.5px;margin:0}.client-head span{font-size:13px;opacity:.88}.search{width:100%;border:1px solid #ffffff66;background:#ffffffed;color:#171717;border-radius:20px;padding:17px 19px;font-family:inherit;font-size:16px;outline-color:#e4e13d}.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}.link{background:#ffffffed;color:#123b7b;text-decoration:none;padding:23px;border-radius:20px;min-height:128px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s,background .15s}.link:hover{transform:translateY(-2px);background:white}.link-title{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;letter-spacing:-.6px;display:flex;justify-content:space-between;gap:8px}.desc{font-size:13px;color:#3f5b81}.empty{grid-column:1/-1;color:white}.note{margin-top:26px;color:#686868;font-size:12px}@media(max-width:620px){.wrap{padding:24px 16px}.client{padding:20px;border-radius:24px}.links{grid-template-columns:1fr}.link{min-height:105px}.tag{margin-top:38px}header{font-size:26px}}
-.groups{display:flex;flex-direction:column;gap:24px;margin-top:22px}.group{border-radius:22px;padding:17px;background:#ffffff17;border:1px solid #ffffff35}.group-head{display:flex;align-items:center;gap:10px;margin:0 0 13px;font:700 17px 'Space Grotesk',sans-serif}.group-head .dot{width:12px;height:12px;border-radius:50%;background:var(--accent)}.group-count{margin-left:auto;font:500 12px 'DM Sans',sans-serif;opacity:.8}.group .links{margin-top:0}.group .link{border-top:5px solid var(--accent);background:var(--surface);color:#173257}.group .desc{color:#48627b}.group[data-type='Instructivos']{--accent:#86b8ff;--surface:#e8f1ff}.group[data-type='Horas y planillas']{--accent:#65d6c0;--surface:#e2faf3}.group[data-type='Portales y beneficios']{--accent:#ffd16e;--surface:#fff4d9}.group[data-type='Gestión y gastos']{--accent:#e2b4ff;--surface:#f5eaff}.group .link:hover{background:#fff}.group .links .empty{margin:0}
-/* LinksPM — visual system inspired by supplied blue/lime editorial references */
-:root{--blue:#384ac2;--lime:#c5ff16;--dark:#111217;--muted:#8794eb}
-body{background:var(--blue);color:#fff;font-family:'DM Sans',sans-serif;background-image:linear-gradient(#ffffff12 1px,transparent 1px),linear-gradient(90deg,#ffffff12 1px,transparent 1px);background-size:92px 92px}
-.wrap{max-width:1200px;padding:36px 42px 80px}
-header{font-size:18px;letter-spacing:-.5px;text-transform:uppercase;justify-content:space-between}
-.logo{background:var(--lime);color:#141414;border-radius:0;padding:9px 12px;font-size:16px;letter-spacing:-1px}
-.tag{margin:94px 0 12px;color:var(--lime);font-size:11px;letter-spacing:4px}
-.client{background:transparent;box-shadow:none;border-radius:0;padding:0;margin:0}
-.client-head{align-items:flex-end;border-bottom:1px solid #ffffff55;padding-bottom:30px;margin-bottom:30px}
-.client-head h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(72px,14vw,180px);font-weight:700;line-height:.88;letter-spacing:-.095em;text-transform:uppercase}
-.client-head h1:after{content:' / PM';color:var(--lime)}
-.client-head span{font-size:12px;color:var(--lime);letter-spacing:2px;text-transform:uppercase;white-space:nowrap}
-.search{background:#14151f;color:white;border:1px solid #7e8ce0;border-radius:0;padding:20px 22px;outline-color:var(--lime);font-size:15px}
-.search::placeholder{color:#a6a9bc}
-.groups{gap:0;margin-top:44px}
-.group{--accent:var(--lime)!important;--surface:#17181f!important;background:transparent;border:0;border-top:1px solid #ffffff60;border-radius:0;padding:26px 0 44px}
-.group-head{font-size:clamp(27px,4.5vw,54px);letter-spacing:-.06em;margin-bottom:24px;font-weight:700}
-.group-head .dot{height:10px;width:10px;background:var(--lime);border-radius:0;margin-right:10px}
-.group-count{color:var(--lime);font-size:11px;letter-spacing:2px;text-transform:uppercase}
-.group .links{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.group .link{border:1px solid #ffffff25;border-top:2px solid var(--lime);background:#15161c;color:#fff;border-radius:0;padding:26px;min-height:155px;position:relative;overflow:hidden}
-.group .link:before{content:'';position:absolute;right:-28px;bottom:-30px;width:125px;height:125px;border:1px solid #8c96ec40;transform:rotate(45deg);pointer-events:none}
-.group .link:hover{background:#222642;transform:translateY(-3px);border-color:var(--lime)}
-.group .link-title{font-size:clamp(19px,2.2vw,27px);line-height:1.1;letter-spacing:-.05em;position:relative;z-index:1}
-.group .link-title>span:last-child{color:var(--lime);font-size:25px}
-.group .desc{color:#a7b0db;font-size:12px;letter-spacing:.2px;position:relative;z-index:1}
-.note{color:#d0d5ff;font-size:11px;letter-spacing:.5px;border-top:1px solid #ffffff44;padding-top:22px;margin-top:28px}
-@media(max-width:700px){.wrap{padding:24px 18px 60px}.tag{margin-top:72px}.client-head{align-items:flex-start;gap:16px}.client-head h1{font-size:clamp(57px,13vw,90px)}.group .links{grid-template-columns:1fr}.group .link{min-height:125px}.group-head{font-size:29px}.group-count{font-size:10px}}
-.tag{margin-top:24px!important}.client-head{display:none!important}.client{margin-top:14px!important}.search{margin-top:0!important}header{margin-bottom:0!important}@media(max-width:700px){.tag{margin-top:20px!important}}</style></head><body><main class="wrap"><header><span class="logo">PM</span>Oscar Martell</header><p class="tag">TODO EN UN SOLO LUGAR ↗</p><section class="client"><input class="search" id="q" placeholder="Buscar un link..." aria-label="Buscar links"><div class="groups" id="links"></div></section><p class="note">Fuente: LinksPM · Los destinos reales mantienen sus propios permisos de acceso.</p></main><script>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f8fa;color:#0e0f12;font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin:auto;padding:30px 30px 80px}
+header{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:700;letter-spacing:-.8px}
+.logo{display:inline-flex;align-items:center;justify-content:center;background:#087dfb;color:white;width:44px;height:44px;border-radius:15px;font-weight:700;font-size:16px;letter-spacing:-1px;box-shadow:0 7px 20px #087dfb24}
+.tag{font-size:12px;letter-spacing:2.3px;text-transform:uppercase;color:#4b5563;margin:10px 0 0 56px}
+.hero{margin:32px 0 24px;border-radius:30px;min-height:258px;padding:34px 38px;position:relative;overflow:hidden;background:radial-gradient(ellipse 60% 75% at 78% 112%,#0067ff 0%,#0a8dff 36%,#6bd5ff 65%,transparent 100%),linear-gradient(125deg,#f8fdff 0%,#eef8ff 60%,#d6f2ff 100%);display:flex;flex-direction:column;justify-content:space-between}
+.hero:after{content:'';position:absolute;width:390px;height:390px;right:-130px;bottom:-275px;border:1px solid #ffffffaa;border-radius:50%;box-shadow:0 0 0 35px #ffffff0e,0 0 0 80px #ffffff0a;pointer-events:none}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:#2368ad}
+.hero h1{font-size:clamp(38px,5.7vw,68px);font-weight:500;letter-spacing:-.065em;line-height:1.06;max-width:760px;margin:15px 0 22px}
+.hero h1 em{font-style:normal;color:#007aff}
+.hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:1}
+.hero-bottom span{font-size:13px;color:#28455e}
+.hero-pill{background:#ffffffc9;border:1px solid #ffffffd9;padding:10px 16px;border-radius:99px;color:#123c64;font-size:12px}
+.client{margin-top:16px}.search-wrap{position:relative;margin-bottom:28px}
+.search{width:100%;background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:20px 22px 20px 52px;font:500 15px 'DM Sans',sans-serif;color:#101114;outline:none;box-shadow:0 4px 24px #1d35500a;transition:border-color .2s,box-shadow .2s}
+.search:focus{border-color:#168cff;box-shadow:0 0 0 4px #008cff16}
+.search-wrap:before{content:'⌕';position:absolute;left:20px;top:11px;color:#168cff;font-size:30px;line-height:1}
+.groups{display:flex;flex-direction:column;gap:32px}
+.group-head{display:flex;align-items:center;gap:12px;margin:0 0 16px;font-size:clamp(23px,3vw,31px);font-weight:500;letter-spacing:-.055em}
+.group-head .dot{height:10px;width:10px;background:var(--accent);border-radius:50%}
+.group-count{margin-left:auto;font-size:12px;font-weight:500;letter-spacing:0;color:#7c8490}
+.group .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.group{--accent:#087dfb;--surface:#f0f4ff}
+.group[data-type='Instructivos']{--accent:#087dfb;--surface:#eff6ff}
+.group[data-type='Horas y planillas']{--accent:#02a7d8;--surface:#eafaff}
+.group[data-type='Gestión y gastos']{--accent:#6366e8;--surface:#f1f0ff}
+.group[data-type='Portales y beneficios']{--accent:#16a99b;--surface:#eaf9f6}
+.link{min-height:168px;background:var(--surface);border:1px solid #00000006;border-radius:26px;padding:24px 25px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;color:#111827;transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.link:after{content:'';position:absolute;right:-44px;bottom:-72px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.10;pointer-events:none}
+.link:hover{transform:translateY(-4px);box-shadow:0 16px 35px #20385c12}
+.link-title{display:flex;justify-content:space-between;gap:14px;font-size:clamp(18px,2.3vw,25px);font-weight:500;letter-spacing:-.045em;line-height:1.22}
+.link-title>span:last-child{display:grid;place-items:center;background:#ffffffd9;border-radius:50%;width:32px;height:32px;flex:none;font-size:19px;color:var(--accent)}
+.desc{font-size:12px;color:#687481;line-height:1.5}
+.empty{color:#6b7280}.note{border-top:1px solid #e5e7eb;margin-top:42px;padding-top:18px;font-size:11px;color:#88909b}
+@media(max-width:650px){.wrap{padding:20px 16px 48px}header{font-size:18px}.tag{margin-left:0;margin-top:14px}.hero{margin-top:24px;padding:28px 23px;min-height:270px;border-radius:25px}.hero h1{font-size:40px}.hero-bottom{align-items:flex-start;flex-direction:column}.group .links{grid-template-columns:1fr}.link{min-height:145px}.groups{gap:28px}}
+</style></head><body><main class="wrap"><header><span class="logo">PM</span>Oscar Martell</header><p class="tag">TODO EN UN SOLO LUGAR ↗</p><section class="hero"><div><div class="eyebrow">TU ESPACIO DE TRABAJO</div><h1>Todo lo que necesitás,<br><em>en un solo lugar.</em></h1></div><div class="hero-bottom"><span>Accesos rápidos, organizados para tu día a día.</span><span class="hero-pill">LINKSPM · 10 ACCESOS</span></div></section><section class="client"><div class="search-wrap"><input class="search" id="q" placeholder="Buscar un enlace..." aria-label="Buscar links"></div><div class="groups" id="links"></div></section><p class="note">Fuente: LinksPM · Los destinos reales mantienen sus propios permisos de acceso.</p></main><script>
 const links=[["Configurar doble factor (2FA)","Soporte · Instructivo de autenticación","https://docs.google.com/document/d/18FtqOUSslffur6YyOozrOls0pzO0-0YJyLvjsVp7IJ8/edit?tab=t.0"],["Firmar recibos de haberes","Recibos · Instructivo","https://docs.google.com/document/d/1SbLuRV7HKGUZ209qMcT_h4OnGhn8u_MbYawRvLozPXU/edit?tab=t.0"],["Instructivos del equipo","Organización · Carga de horas, ausencias y People Force","https://docs.google.com/document/d/1RvblgTaV30fv921n99WNnhFQMAOwsH6UGl9qYFuPvIM/edit?tab=t.kldbahcyi6bu"],["Carga de horas en ServiceNow","Horas · Instructivos","https://drive.google.com/drive/folders/14hyj3Dew43S3N4oapu9x-9aAKWjzJNW3"],["Carga de horas del equipo","Horas · Planilla","https://docs.google.com/spreadsheets/d/17mFgS5PW0Fght0nZixDvD4ioSTpatwMOGg2Lb5gPfDI/edit"],["Carpeta de horas del equipo","Horas · Archivos por colaborador","https://drive.google.com/drive/folders/1-ocZy6x52z_QVGyIKcW9l4_eQKb9ZLgC"],["Modelo de viáticos y gastos","Planilla · Rendición","https://docs.google.com/spreadsheets/d/1SQLTx06B_L1j7owMODNOtWmvxuJc9zwc/edit?gid=1757086217"],["People Force","Organización · Acceso","https://nowvertical-es.peopleforce.io/users/sign_in"],["WeAreNow","Beneficios · Portal","http://wearenow-es.com"],["Club de Beneficios","Beneficios · Portal","https://clubdebeneficios.com/"]];
 const q=document.getElementById('q'),out=document.getElementById('links');
 const categories=[{name:'Instructivos',items:[0,1,2,3]},{name:'Horas y planillas',items:[4,5]},{name:'Gestión y gastos',items:[6]},{name:'Portales y beneficios',items:[7,8,9]}];
