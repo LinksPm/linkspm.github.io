@@ -11,6 +11,22 @@
 .backdrop{display:none;position:fixed;inset:0;z-index:20;background:#000b;align-items:center;justify-content:center;padding:18px}.backdrop.show{display:flex}.modal{width:min(500px,100%);max-height:92vh;overflow:auto;background:#292929;border:1px solid #555;border-radius:18px;padding:23px}.modal h2{margin:0 0 17px;font-size:20px}.modal label{display:block;color:#ccc;font-size:12px;margin:11px 0 5px}.modal input{width:100%;padding:11px;background:#1a1a1a;color:white;border:1px solid #555;border-radius:8px}.modal .checks{display:flex;gap:10px;align-items:center}.modal .checks input{width:auto}.modal-actions{display:flex;gap:9px;justify-content:flex-end;margin-top:21px}.modal button{background:#393939;color:white;border:1px solid #555;border-radius:9px;padding:10px 14px}.modal button.primary{background:var(--lime);color:#171717;border-color:var(--lime)}.modal button.danger{margin-right:auto;color:#ffb7b7}
 @media(min-width:790px){.folders .folder-items{display:none}.folders .folder.active .folder-items{display:block}.folders{max-width:760px}}
 @media(max-width:789px){.layout{max-width:480px;padding:17px 15px 95px}.hero{padding:22px 20px 20px;border-radius:19px;margin-bottom:19px}.brand{font-size:47px}.subtitle{font-size:12px;margin-bottom:16px}.hero-search input{padding:12px 0}.quick{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.quick a{min-height:40px;padding:9px 10px}.section-head{margin:20px 0 11px}.work{display:block;margin-top:14px}.folder-btn{padding:13px}.folder-items{padding:5px 9px}.folder-item{padding:10px 7px}.desktop-docs{display:none}.bar{position:fixed;left:50%;bottom:max(12px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(calc(100% - 30px),450px);display:flex;justify-content:space-around;background:#303030;border:1px solid #494949;border-radius:17px;padding:8px;z-index:5;box-shadow:0 5px 30px #0005}.bar button{border:0;background:none;color:#aaa;padding:6px 10px;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:3px}.bar button span{font-size:18px}.bar button.active{color:var(--lime)}.toolbar{margin:6px 0 13px}}
+
+/* Escala ampliada para pantallas de escritorio, sin modificar el diseño móvil */
+@media(min-width:790px){
+.layout{max-width:1080px;padding-top:34px}
+.hero{max-width:860px;padding:38px 42px 36px;border-radius:25px;margin-bottom:29px}
+.eyebrow{font-size:12px;letter-spacing:.14em}
+.brand{font-size:72px;margin:13px 0 9px}
+.subtitle{font-size:16px;margin-bottom:26px}
+.hero-search{max-width:720px;border-radius:15px;padding:0 18px}
+.hero-search span{font-size:27px}
+.hero-search input{font-size:16px;padding:18px 0}
+.bar{max-width:600px;width:100%;margin:32px 0 0;padding:12px 16px;border-radius:19px;gap:15px;justify-content:space-around}
+.bar button{font-size:14px;padding:12px 25px;gap:6px;min-width:125px;border-radius:12px}
+.bar button:hover{background:#404040}
+.bar button span{font-size:25px}
+}
 </style></head><body>
 <div class="layout">
 <header class="hero"><div class="eyebrow">OSCAR MARTELL / WORKSPACE</div><h1 class="brand">rpstr<span>.</span></h1><p class="subtitle">Tu espacio de trabajo</p><label class="hero-search"><span>⌕</span><input id="search" placeholder="Buscar cualquier enlace..." autocomplete="off" aria-label="Buscar enlaces"></label></header>
